@@ -1,7 +1,7 @@
 FROM continuumio/anaconda
 
 RUN pip install django==1.9.5
-RUN pip install https://pypi.python.org/packages/source/m/matplotlib/matplotlib-1.4.3.tar.gz
+RUN apt-get install python-matplotlib==1.4.3
 RUN pip install seaborn
 RUN pip install django-jfu
 RUN pip install jsonfield
